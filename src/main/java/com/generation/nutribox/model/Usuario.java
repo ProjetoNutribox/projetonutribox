@@ -28,7 +28,7 @@ public class Usuario {
 	@Size(min = 8, max = 500, message = "O campo senha precisa ter entre 4 e 50 caracteres")
 	private String senha;
 	
-	@Size(min = 3, max = 5000, message = "O campo foto precisa ter entre 3 e 5000 caracteres")
+	@Size(max = 5000, message = "O campo foto precisa ter até 5000 caracteres")
 	private String foto;
 	
 

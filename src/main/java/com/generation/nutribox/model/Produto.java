@@ -2,6 +2,7 @@ package com.generation.nutribox.model;
 
 import org.apache.logging.log4j.util.StringBuilderFormattable;
 
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import jakarta.persistence.Entity;
