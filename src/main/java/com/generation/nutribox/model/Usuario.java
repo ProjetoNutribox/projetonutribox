@@ -1,5 +1,6 @@
 package com.generation.nutribox.model;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -20,6 +21,7 @@ public class Usuario {
 	@Size(min = 2, max = 50, message = "O campo nome precisa ter entre 4 e 50 caracteres")
 	private String nome;
 	
+	@Schema(example = "email@email.com.br")
 	@NotBlank(message = "O atributo email é obrigatório e não pode estar vazio")
 	@Size(min = 4, max = 50, message = "O campo email precisa ter entre 4 e 50 caracteres")
 	private String email;
